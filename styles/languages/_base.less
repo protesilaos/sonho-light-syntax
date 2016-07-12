@@ -1,0 +1,67 @@
+.text-1 { color: @text-1; }
+.text-2 { color: @text-2; }
+
+.color-1 { color: @color-1; }
+.color-2 { color: @color-2; }
+.color-3 { color: @color-3; }
+
+.support-1 { color: @support-1; }
+.support-2 { color: @support-2; }
+
+.accent-1 { color: @accent-1; }
+.accent-2 { color: @accent-2; }
+.accent-3 { color: @accent-3; }
+
+// Mixins -----------------------------------
+.punctuation-mixin(@punctuation:@text-2) {
+  .punctuation,
+  .bracket,
+  .brace {
+    color: @punctuation;
+  }
+  .string .punctuation {
+    .text-2();
+  }
+}
+
+.meta {
+  .text-2();
+}
+
+.html.elements,
+.entity,
+.tag,
+.function-call {
+  .color-1();
+}
+
+.variable,
+.attribute-name,
+.character.escape {
+  .color-2();
+}
+
+.support {
+  .text-1();
+}
+
+.string,
+.constant,
+.storage.type {
+  .color-3();
+}
+
+.keyword,
+.storage {
+  .support-1();
+}
+
+.punctuation-mixin();
+
+.comment {
+  .text-2();
+  font-style: italic;
+}
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }

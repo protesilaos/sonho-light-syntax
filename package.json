@@ -1,0 +1,18 @@
+{
+  "name": "sonho-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Medium-to-high contrast theme. Relaxed and playful.",
+  "keywords": [
+    "syntax",
+    "magenta",
+    "cyan",
+    "yellow",
+    "light"
+  ],
+  "repository": "https://github.com/protesilaos/sonho-light-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0"
+  }
+}

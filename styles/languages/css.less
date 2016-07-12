@@ -1,0 +1,20 @@
+// CSS
+
+.css {
+  &.source {
+    .text-2();
+  }
+  &.at-rule {
+    .color-1();
+    .keyword.punctuation {
+      color: inherit;
+    }
+  }
+  &.attribute-name {
+    &.id,
+    &.class,
+    &.parent-selector {
+      .color-1();
+    }
+  }
+}

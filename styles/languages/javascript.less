@@ -1,0 +1,61 @@
+.js {
+  &.source {
+    .text-1();
+    .punctuation-mixin();
+  }
+
+  .entity {
+    &.name.function {
+      .color-3();
+    }
+  }
+
+  .constant {
+    .color-3();
+  }
+
+  .variable {
+    .color-1();
+
+    &.other {
+      .support-1();
+    }
+
+    &.parameter {
+      .color-1;
+    }
+  }
+
+  .meta.arguments {
+    .color-1();
+  }
+
+  .storage.type {
+    .color-2();
+  }
+
+  .keyword {
+    .color-1();
+
+    &.operator {
+      .text-2();
+    }
+  }
+
+  .string {
+    .support-1();
+
+    &.punctuation.definition {
+      .support-1();
+    }
+  }
+
+  .support {
+    &.class {
+      .support-2();
+    }
+    &.function {
+      .text-1;
+    }
+  }
+}
