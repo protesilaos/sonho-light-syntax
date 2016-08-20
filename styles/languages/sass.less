@@ -4,27 +4,27 @@
   .at-rule .at-rule {
     &,
     > .punctuation{
-      .color-1();
+      .primary1();
     }
   }
   .mixin + .function,
   .include + .function {
-    .support-1();
+    .secondary1();
   }
   &.property-value {
-    .color-3();
+    .primary3();
     .function {
-      .color-2();
+      .primary2();
     }
     .punctuation {
-      .text-2();
+      .text2();
     }
   }
   &.variable.parameter.url {
-    .color-3();
+    .primary3();
   }
   &.class,
   &.parent-selector-suffix {
-    .color-1();
+    .primary1();
   }
 }

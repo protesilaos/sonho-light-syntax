@@ -1,5 +1,3 @@
-// Sonho Syntax Theme
-
 // Color scheme -----------------------------------
 
 @dbg: #4A3638; // Dark background
@@ -22,28 +20,30 @@
 @cya: #5FB8B4; // Cyan
 @vio: #A77CCF; // Violet
 
-// Variables -----------------------------------
+// Visual order -----------------------------------
 
-@text-1: @lt1; // text primary
-@text-2: @lt2; // text secondary
+@primary1: @mag;
+@primary2: @cya;
+@primary3: @yel;
 
-@color-1: @mag; // color primary
-@color-2: @cya; // color secondary
-@color-3: @yel; // color tertiary
+@secondary1: @ora;
+@secondary2: @vio;
 
-@support-1: @ora; // support primary
-@support-2: @vio; // support secondary
+@tertiary1: @blu;
+@tertiary2: @gre;
+@tertiary3: @red;
 
-@accent-1: @blu; // accent primary
-@accent-2: @gre; // accent secondary
-@accent-3: @red; // accent tertiary
+// Theme variant ----------------------------------
 
-// Base vars -----------------------------------
-
-@syntax-fg: @text-1; // text primary
-@syntax-accent: @accent-1; // accent primary
+@text1: @lt1; // text primary
+@text2: @lt2; // text secondary
 @syntax-bg: @lbg; // background
 @syntax-guide: @lhl; // background highlight
+
+// Atom Base vars ---------------------------------
+
+@syntax-fg: @text1; // text primary
+@syntax-accent: @tertiary1; // cursor, markdown preview links, etc.
 @syntax-selection: @syntax-guide;
 @syntax-selection-gutter: @syntax-guide;
 @syntax-cursor-line: fade(@syntax-selection, 26%); // needs to be semi-transparent to show serach results

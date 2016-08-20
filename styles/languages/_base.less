@@ -1,65 +1,65 @@
-.text-1 { color: @text-1; }
-.text-2 { color: @text-2; }
+.text1 { color: @text1; }
+.text2 { color: @text2; }
 
-.color-1 { color: @color-1; }
-.color-2 { color: @color-2; }
-.color-3 { color: @color-3; }
+.primary1 { color: @primary1; }
+.primary2 { color: @primary2; }
+.primary3 { color: @primary3; }
 
-.support-1 { color: @support-1; }
-.support-2 { color: @support-2; }
+.secondary1 { color: @secondary1; }
+.secondary2 { color: @secondary2; }
 
-.accent-1 { color: @accent-1; }
-.accent-2 { color: @accent-2; }
-.accent-3 { color: @accent-3; }
+.tertiary1 { color: @tertiary1; }
+.tertiary2 { color: @tertiary2; }
+.tertiary3 { color: @tertiary3; }
 
 // Mixins -----------------------------------
-.punctuation-mixin(@punctuation:@text-2) {
+.punctuation-mixin(@punctuation:@text2) {
   .punctuation,
   .bracket,
   .brace {
     color: @punctuation;
   }
   .string .punctuation {
-    .text-2();
+    .text2();
   }
 }
 
 .meta {
-  .text-2();
+  .text2();
 }
 
 .html.elements,
 .entity,
 .tag,
 .function-call {
-  .color-1();
+  .primary1();
 }
 
 .variable,
 .attribute-name,
 .character.escape {
-  .color-2();
+  .primary2();
 }
 
 .support {
-  .text-1();
+  .text1();
 }
 
 .string,
 .constant,
 .storage.type {
-  .color-3();
+  .primary3();
 }
 
 .keyword,
 .storage {
-  .support-1();
+  .secondary1();
 }
 
 .punctuation-mixin();
 
 .comment {
-  .text-2();
+  .text2();
   font-style: italic;
 }
 

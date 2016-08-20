@@ -1,66 +1,66 @@
 // GitHub Flavoured Markdown
 
 .gfm {
-  .text-1();
+  .text1();
   .punctuation-mixin();
 
   .link {
-    .color-2();
+    .primary2();
   }
 
   &.markup {
-    .text-2();
+    .text1();
 
     &.bold   { .bold(); }
     &.italic { .italic(); }
     &.strike {
-      .text-2();
+      .text2();
       text-decoration: line-through;
     }
 
     &.raw,
     &.raw .support,
     &.code .support {
-      .text-2();
+      .secondary1();
     }
 
     &.underline.link {
-      .color-3();
+      .primary3();
     }
   }
 
   &.comment  {
-    .text-2();
+    .text2();
     &.quote {
-      .text-2();
+      .text1();
     }
   }
 
   &.table {
-    .text-1();
+    .text1();
 
     .border,
     .pipe {
-      .text-2();
+      .text2();
     }
   }
 
   &.variable,
   &.entity {
-    .color-2();
+    .primary2();
   }
 
   &.variable.list {
-    .accent-3();
+    .tertiary3();
   }
 
-  &.support  { .support-1(); }
+  &.support  { .secondary1(); }
 
   &.heading {
-    .color-1();
+    .primary1();
 
     &.marker {
-      .accent-2();
+      .tertiary2();
     }
   }
 }

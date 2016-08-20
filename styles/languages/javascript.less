@@ -1,61 +1,73 @@
 .js {
   &.source {
-    .text-1();
+    .text1();
     .punctuation-mixin();
   }
 
   .entity {
     &.name.function {
-      .color-3();
+      .primary3();
     }
   }
 
   .constant {
-    .color-3();
+    .primary3();
   }
 
   .variable {
-    .color-1();
+    .primary1();
 
     &.other {
-      .support-1();
+      .secondary1();
     }
 
     &.parameter {
-      .color-1;
+      .primary1;
     }
   }
 
   .meta.arguments {
-    .color-1();
+    .primary1();
   }
 
   .storage.type {
-    .color-2();
+    .primary2();
   }
 
   .keyword {
-    .color-1();
+    .primary1();
+
+    &.control {
+      .secondary2();
+    }
 
     &.operator {
-      .text-2();
+      .text1();
+
+      &.typeof {
+        .tertiary2();
+      }
+
+      &.logical {
+        .tertiary3();
+      }
     }
   }
 
   .string {
-    .support-1();
+    .secondary1();
 
     &.punctuation.definition {
-      .support-1();
+      .secondary1();
     }
   }
 
   .support {
     &.class {
-      .support-2();
+      .secondary2();
     }
     &.function {
-      .text-1;
+      .text1();
     }
   }
 }
