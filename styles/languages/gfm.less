@@ -6,6 +6,10 @@
 
   .link {
     .primary2();
+
+    .entity {
+      border-bottom: thin solid;
+    }
   }
 
   &.markup {
@@ -21,11 +25,11 @@
     &.raw,
     &.raw .support,
     &.code .support {
-      .secondary1();
+      .secondary2();
     }
 
     &.underline.link {
-      .primary3();
+      .text2();
     }
   }
 
@@ -51,16 +55,20 @@
   }
 
   &.variable.list {
-    .tertiary3();
+    .text1();
+    font-weight: bold;
   }
 
-  &.support  { .secondary1(); }
+  &.support  {
+    .text1();
+  }
 
   &.heading {
     .primary1();
+    font-weight: bold;
 
     &.marker {
-      .tertiary2();
+      .primary1();
     }
   }
 }

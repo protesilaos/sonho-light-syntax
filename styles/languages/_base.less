@@ -19,13 +19,11 @@
   .brace {
     color: @punctuation;
   }
-  .string .punctuation {
-    .text2();
-  }
 }
 
-.meta {
-  .text2();
+.meta,
+.support {
+  .text1();
 }
 
 .html.elements,
@@ -41,19 +39,19 @@
   .primary2();
 }
 
-.support {
-  .text1();
-}
-
-.string,
 .constant,
 .storage.type {
   .primary3();
 }
 
+.string,
+.string.punctuation {
+  .secondary1();
+}
+
 .keyword,
 .storage {
-  .secondary1();
+  .secondary2();
 }
 
 .punctuation-mixin();
