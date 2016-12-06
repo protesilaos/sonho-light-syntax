@@ -22,6 +22,6 @@ apm install sonho-syntax
 
 ## Further information
 
-Project page: [http://www.protesilaos.com/sonho](http://www.protesilaos.com/sonho)
+Project page: [https://protesilaos.com/sonho](https://protesilaos.com/sonho)
 
 Sonho dark version: [https://atom.io/themes/sonho-dark-syntax](https://atom.io/themes/sonho-dark-syntax)
