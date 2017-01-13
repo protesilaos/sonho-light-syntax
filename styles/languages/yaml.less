@@ -1,23 +1,21 @@
-// YAML
-
-.yaml {
-  .tag {
+.syntax--yaml {
+  .syntax--tag {
     .primary1();
   }
-  .string {
+  .syntax--string {
     .text1();
 
-    &.quoted {
+    &.syntax--quoted {
       .secondary1();
     }
   }
-  .constant {
+  .syntax--constant {
     .primary3();
   }
-  .punctuation {
+  .syntax--punctuation {
     .text2();
 
-    &.string {
+    &.syntax--string {
       .secondary1();
     }
   }

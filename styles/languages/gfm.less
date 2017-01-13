@@ -1,73 +1,71 @@
-// GitHub Flavoured Markdown
-
-.gfm {
+.syntax--gfm {
   .text1();
   .punctuation-mixin();
 
-  .link {
+  .syntax--link {
     .primary2();
 
-    .entity {
+    .syntax--entity {
       border-bottom: thin solid;
     }
   }
 
-  &.markup {
+  &.syntax--markup {
     .text1();
 
-    &.bold   { .bold(); }
-    &.italic { .italic(); }
-    &.strike {
+    &.syntax--bold   { .syntax--bold(); }
+    &.syntax--italic { .syntax--italic(); }
+    &.syntax--strike {
       .text2();
       text-decoration: line-through;
     }
 
-    &.raw,
-    &.raw .support,
-    &.code .support {
+    &.syntax--raw,
+    &.syntax--raw .syntax--support,
+    &.syntax--code .syntax--support {
       .secondary2();
     }
 
-    &.underline.link {
+    &.syntax--underline.syntax--link {
       .text2();
     }
   }
 
-  &.comment  {
+  &.syntax--comment  {
     .text2();
-    &.quote {
+    &.syntax--quote {
       .text1();
     }
   }
 
-  &.table {
+  &.syntax--table {
     .text1();
 
-    .border,
-    .pipe {
+    .syntax--border,
+    .syntax--pipe {
       .text2();
     }
   }
 
-  &.variable,
-  &.entity {
+  &.syntax--variable,
+  &.syntax--entity {
     .primary2();
   }
 
-  &.variable.list {
+  &.syntax--variable.syntax--list {
     .text1();
     font-weight: bold;
   }
 
-  &.support  {
+  &.syntax--support  {
     .text1();
   }
 
-  &.heading {
+  &.syntax--heading {
     .primary1();
     font-weight: bold;
 
-    &.marker {
+    &.syntax--marker {
       .primary1();
     }
   }

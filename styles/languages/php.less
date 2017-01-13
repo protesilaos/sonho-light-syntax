@@ -1,28 +1,26 @@
-// PHP
-
-.php {
-  .string-contents {
+.syntax--php {
+  .syntax--string-contents {
       .secondary1();
   }
 
-  .keyword {
+  .syntax--keyword {
     .primary3();
 
-    &.other {
+    &.syntax--other {
       .text2;
     }
 
-    &.operator {
+    &.syntax--operator {
       .primary2();
     }
   }
 
-  .punctuation {
-    &.section.embedded {
+  .syntax--punctuation {
+    &.syntax--section.syntax--embedded {
       .text1();
     }
 
-    &.definition.variable {
+    &.syntax--definition.syntax--variable {
       .primary2();
     }
   }

@@ -1,37 +1,35 @@
-// Coffee
-
-.coffee {
-  &.source {
+.syntax--coffee {
+  &.syntax--source {
     .text1();
   }
 
-  .string {
-    &.quoted {
+  .syntax--string {
+    &.syntax--quoted {
       .secondary1();
     }
   }
 
-  .punctuation {
-    &.definition {
-      &.string {
+  .syntax--punctuation {
+    &.syntax--definition {
+      &.syntax--string {
         .secondary1();
       }
     }
   }
 
-  .keyword {
-    &.control {
+  .syntax--keyword {
+    &.syntax--control {
       .primary3();
-      &.anchor {
+      &.syntax--anchor {
         .secondary2();
       }
     }
 
-    &.operator {
+    &.syntax--operator {
       .text1();
     }
 
-    &.other {
+    &.syntax--other {
       .secondary2();
     }
   }

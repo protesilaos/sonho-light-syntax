@@ -4,13 +4,18 @@ A medium-to-high contrast theme that delivers a playful, relaxed feel. The most 
 
 *Sonho* comes in standalone light and dark variants (see further info below).
 
-## Screenshot
+## Screenshots
 
-![sonho light screenshot](https://raw.githubusercontent.com/protesilaos/prot16/master/sonho/img/sonho_light_sample.png)
+![sonho light screenshot html](https://raw.githubusercontent.com/protesilaos/prot16/master/sonho/img/sonho_light_html.png)
 
-*The font is [Iosevka term slab](https://github.com/be5invis/Iosevka)*.  
-*JavaScript demo is source code of [prismjs](http://prismjs.com/)*  
-*The UI is my experimental fork of the default One Dark*.
+![sonho light screenshot scss](https://raw.githubusercontent.com/protesilaos/prot16/master/sonho/img/sonho_light_scss.png)
+
+![sonho light screenshot js](https://raw.githubusercontent.com/protesilaos/prot16/master/sonho/img/sonho_light_js.png)
+
+![sonho light screenshot md](https://raw.githubusercontent.com/protesilaos/prot16/master/sonho/img/sonho_light_md.png)
+
+*The font is [Iosevka term](https://github.com/be5invis/Iosevka)*.  
+*The UI is [Atom Material](https://github.com/atom-material/atom-material-ui)*.
 
 ## Download
 

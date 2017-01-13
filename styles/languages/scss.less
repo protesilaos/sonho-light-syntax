@@ -1,75 +1,73 @@
-// SCSS
-
-.scss {
-  .at-rule .at-rule {
+.syntax--scss {
+  .syntax--at-rule .syntax--at-rule {
     &,
-    > .punctuation{
+    > .syntax--punctuation{
       .primary1();
     }
   }
-  .mixin + .function,
-  .include + .function {
+  .syntax--mixin + .syntax--function,
+  .syntax--include + .syntax--function {
     .secondary1();
   }
-  &.property-value {
+  &.syntax--property-value {
     .primary3();
-    .function {
+    .syntax--function {
       .primary2();
     }
-    .punctuation {
+    .syntax--punctuation {
       .text2();
     }
   }
-  &.variable.parameter.url {
+  &.syntax--variable.syntax--parameter.syntax--url {
     .primary3();
   }
-  &.class,
-  &.parent-selector-suffix {
+  &.syntax--class,
+  &.syntax--parent-selector-suffix {
     .primary1();
   }
 
-  .support {
-    &.function {
+  .syntax--support {
+    &.syntax--function {
       .secondary2();
     }
   }
 
-  .keyword {
-    &.control {
+  .syntax--keyword {
+    &.syntax--control {
       .primary1();
     }
   }
 
-  .punctuation {
-    &.definition {
-      &.keyword {
+  .syntax--punctuation {
+    &.syntax--definition {
+      &.syntax--keyword {
         .primary1();
       }
 
-      &.string {
+      &.syntax--string {
         .secondary1();
       }
 
-      &.constant {
+      &.syntax--constant {
         .primary3();
       }
     }
   }
 
-  .variable {
-    &.interpolation {
+  .syntax--variable {
+    &.syntax--interpolation {
       .primary3();
     }
   }
 
-  .string {
-    &.quoted {
+  .syntax--string {
+    &.syntax--quoted {
       .secondary1();
     }
   }
 
-  .entity {
-    &.name.function {
+  .syntax--entity {
+    &.syntax--name.syntax--function {
       .secondary2();
     }
   }
